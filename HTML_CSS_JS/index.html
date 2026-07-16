@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #myButton {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function myAlert(){
+            alert('hey ayyy!')
+        }
+
+        function secondAlert(msg){
+            alert(msg)
+        }
+    </script>
+</head>
+<body>
+    <p>Hello <a target="_blank" href="https://www.ibm.com/in-en">IBM</a></p>
+    <div style="margin-left: 10px;">
+    <h1 style="color: blue; font-family: Arial, sans-serif;">Hello World</h1>
+    <button id="myButton" onclick="myAlert()">Click Me</button>
+    <button id="mySecondButton" onclick="secondAlert('Hello, Rahil!')">Click Me</button>
+    </div>
+</body>
+</html>
