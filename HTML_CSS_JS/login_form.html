@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3>Login Form</h3>
+        <p>Name:<input type="text" id="name" placeholder="Enter your name"></p>
+        <p>Email:<input type="email" id="email" placeholder="Enter your email"></p>
+        <p>Password:<input type="password" id="password" placeholder="Enter your password"></p>
+        <p>Mobile Number:<input type="tel" id="mobile" placeholder="Enter your mobile number"></p>
+        <p>Hint question:<input type="text" id="hint-question" placeholder="Enter your hint question"></p>
+        <p>Hint answer:<input type="text" id="hint-answer" placeholder="Enter your hint answer"></p>
+        <p><button id="submit-btn">Submit</button></p>
+    </div>
+    <script>
+        const submitBtn=document.getElementById('submit-btn');
+        submitBtn.addEventListener('click',function(){
+            const name=document.getElementById('name').value;
+            const email=document.getElementById('email').value;
+            const password=document.getElementById('password').value;
+            const mobile=document.getElementById('mobile').value;
+            const hintQuestion=document.getElementById('hint-question').value;
+            const hintAnswer=document.getElementById('hint-answer').value;
+
+            console.log('Name:',name);
+            console.log('Email:',email);
+            console.log('Password:',password);
+            console.log('Mobile Number:',mobile);
+            console.log('Hint Question:',hintQuestion);
+            console.log('Hint Answer:',hintAnswer);
+        })
+    </script>
+</body>
+</html>
