@@ -8,6 +8,7 @@ public class challenge {
         System.out.println("Enter another string: ");
         String user_string_2 = sc.nextLine();
         // System.out.println("You entered: " + user_string_1 + " and " + user_string_2);
+        sc.close();
 
         if(isAnagram(user_string_1, user_string_2)) {
             System.out.println("The strings are anagrams.");
